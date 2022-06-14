@@ -1,0 +1,355 @@
+﻿@model Apresentacao.Models.SegurancaDadosModel
+@using Entidades.Entidade
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SegurancaDados</title>
+</head>
+<body>
+
+<h4>SegurancaDadosModel</h4>
+<hr />
+<div class="row">
+	<table class="table">
+		<thead>
+			<tr>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					@*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+				@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+				@Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+				</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S01.Id)</td>
+				<td>@Html.LabelFor(m => m.S01.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S01.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S01.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S01.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S01.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S02.Id)</td>
+				<td>@Html.LabelFor(m => m.S02.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S02.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S02.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S02.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S02.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S03.Id)</td>
+				<td>@Html.LabelFor(m => m.S03.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S03.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S03.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S03.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S03.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S04.Id)</td>
+				<td>@Html.LabelFor(m => m.S04.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S04.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S04.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S04.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S04.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S05.Id)</td>
+				<td>@Html.LabelFor(m => m.S05.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S05.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S05.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S05.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S05.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S01NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S01NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S01NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S01NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S01NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S01NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S02NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S02NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S02NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S02NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S02NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S02NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S03NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S03NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S03NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S03NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S03NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S03NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S04NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S04NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S04NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S04NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S04NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S04NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S05NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S05NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S05NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S05NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S05NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S05NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S06NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S06NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S06NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S06NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S06NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S06NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S07NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S07NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S07NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S07NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S07NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S07NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S08NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S08NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S08NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S08NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S08NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S08NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S09NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S09NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S09NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S09NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S09NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S09NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S10NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S10NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S10NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S10NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S10NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S10NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S11NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S11NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S11NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S11NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S11NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S11NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S12NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S12NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S12NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S12NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S12NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S12NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S13NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S13NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S13NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S13NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S13NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S13NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S14NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S14NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S14NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S14NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S14NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S14NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S15NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S15NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S15NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S15NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S15NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S15NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S16NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S16NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S16NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S16NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S16NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S16NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S17NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S17NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S17NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S17NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S17NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S17NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S18NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S18NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S18NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S18NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S18NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S18NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S19NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S19NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S19NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S19NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S19NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S19NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S20NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S20NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S20NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S20NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S20NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S20NO.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.S21NO.Id)</td>
+				<td>@Html.LabelFor(m => m.S21NO.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="S21NO.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="S21NO.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.S21NO.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.S21NO.Recomendacoes)</td>
+			</tr>
+
+		</tbody>
+	</table>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+</body>
+</html>

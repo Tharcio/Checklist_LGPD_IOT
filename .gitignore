@@ -3,3 +3,11 @@
 ################################################################################
 
 /.vs
+/Aplicacao/bin/Debug/netcoreapp2.1
+/Aplicacao/obj
+/Checklist_LGPD_IoT/bin/Debug/netcoreapp2.1
+/Checklist_LGPD_IoT/obj
+/Entidades/obj
+/Entidades/bin/Debug/netcoreapp2.1
+/Repositorios/bin/Debug/netcoreapp2.1
+/Repositorios/obj

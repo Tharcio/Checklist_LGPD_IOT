@@ -1,0 +1,5 @@
+A-01|A organização fornece credenciais diferentes para cada utilizador?|Deve ser realizado o controle de acesso para cada utilizador, criando uma lista de pessoas autorizadas.
+A-02|São atribuídas senhas diferentes a cada dispositivo para fortalecer a segurança?|Ao utilizar a mesma senha para cada dispositivo, a segurança fica enfraquecida, o ideal é ter senhas diferentes. Uma solução é utilizar um algoritmo para gerar as senhas.
+A-03|Houve mudança da senha padrão do dispositivo, para evitar acesso não autorizado?|É de suma importância a mudança imediata da senha padrão do dispositivo, a senha padrão já é disponibilizada no manual dos dispositivos que facilmente é encontrado no site do fabricante.
+A-04|O dispositivo garante que a senha seja forte e segura?|Para o fornecimento de uma maior proteção a segurança, é fundamental senhas fortes, como por exemplo: Uso de letras maiúsculas, letras minúsculas, números e símbolos.
+A-05|São registradas falhas ou possíveis suspeitas de vulnerabilidade?|Realizar registros de todas as falhas e suspeitas reais, possuir esta documentação pode ajudar na organização e prevenções.

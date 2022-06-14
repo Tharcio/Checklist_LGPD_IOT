@@ -1,0 +1,127 @@
+﻿@model Apresentacao.Models.SegurancaFisicaModel
+@using Entidades.Entidade
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SegurancaFisica</title>
+</head>
+<body>
+
+<h4>SegurancaFisicaModel</h4>
+<hr />
+<div class="row">
+	<table class="table">
+		<thead>
+			<tr>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					@*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+					@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+					@Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+				</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.SF01.Id)</td>
+				<td>@Html.LabelFor(m => m.SF01.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="SF01.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="SF01.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.SF01.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.SF01.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.SF02.Id)</td>
+				<td>@Html.LabelFor(m => m.SF02.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="SF02.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="SF02.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.SF02.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.SF02.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.SF03.Id)</td>
+				<td>@Html.LabelFor(m => m.SF03.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="SF03.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="SF03.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.SF03.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.SF03.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.SF04.Id)</td>
+				<td>@Html.LabelFor(m => m.SF04.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="SF04.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="SF04.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.SF04.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.SF04.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.SF05.Id)</td>
+				<td>@Html.LabelFor(m => m.SF05.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="SF05.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="SF05.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.SF05.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.SF05.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.SF06.Id)</td>
+				<td>@Html.LabelFor(m => m.SF06.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="SF06.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="SF06.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.SF06.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.SF06.Recomendacoes)</td>
+			</tr>
+			<tr>
+				<td>@Html.LabelFor(m => m.SF07.Id)</td>
+				<td>@Html.LabelFor(m => m.SF07.ItemAvaliacao)</td>
+				<td>
+					<select asp-for="SF07.Resposta" asp-items="Html.GetEnumSelectList<Resposta>()"></select>
+				</td>
+				<td>
+					<select asp-for="SF07.GrauSeveridade" asp-items="Html.GetEnumSelectList<GrauSeveridade>()"></select>
+				</td>
+				<td>@Html.TextAreaFor(m => m.SF07.ComentarioAvaliador)</td>
+				<td>@Html.TextAreaFor(m => m.SF07.Recomendacoes)</td>
+			</tr>
+
+		</tbody>
+	</table>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+</body>
+</html>
