@@ -9,6 +9,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Aplicacao.Interfaces;
+using Aplicacao.Servicos;
+using Entidades.InterfaceRepositorio;
+using Repositorios.Repositorio;
 
 namespace Checklist_LGPD_IoT
 {
@@ -31,7 +35,8 @@ namespace Checklist_LGPD_IoT
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            services.AddTransient<IServicoListaPerguntas, ServicoListaPerguntas>();
+            services.AddTransient<IRepositorioListaPerguntas, RepositorioListaPerguntas>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
